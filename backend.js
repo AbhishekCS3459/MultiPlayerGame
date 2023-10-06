@@ -43,7 +43,7 @@ io.on('connection', (socket) => {
       playerId: socket.id
     }
 
-    console.log(backEndProjectiles)
+    // console.log(backEndProjectiles)
   })
 
   socket.on('initGame', ({ username, width, height }) => {
@@ -150,7 +150,7 @@ setInterval(() => {
         if (backEndPlayers[backEndProjectiles[id].playerId])
           backEndPlayers[backEndProjectiles[id].playerId].score++
 
-        console.log(backEndPlayers[backEndProjectiles[id].playerId])
+        // console.log(backEndPlayers[backEndProjectiles[id].playerId])
         delete backEndProjectiles[id]
         delete backEndPlayers[playerId]
         break
